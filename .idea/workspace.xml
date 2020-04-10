@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="4k0eb8qt" />
+  </component>
+  <component name="ProjectId" id="1aMajm4XtZetSFNH3KDsnAOHVhc" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="" />
+      <created>1586548053224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586548053224</updated>
+      <workItem from="1586548056798" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586548140782">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586548140782" />
+    <state width="661" height="192" key="GridCell.Tab.0.bottom" timestamp="1586548112021">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="661" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586548112021" />
+    <state width="661" height="192" key="GridCell.Tab.0.center" timestamp="1586548112021">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="661" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586548112021" />
+    <state width="661" height="192" key="GridCell.Tab.0.left" timestamp="1586548112021">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="661" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586548112021" />
+    <state width="661" height="192" key="GridCell.Tab.0.right" timestamp="1586548112021">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="661" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586548112021" />
+  </component>
+</project>
