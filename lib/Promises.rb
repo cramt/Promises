@@ -72,6 +72,10 @@ class Promise
     }
   end
 
+  def catch(&block)
+    self.then(nil, block)
+  end
+
   def pending?
     @state == :pending
   end

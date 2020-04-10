@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Promises.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/Promises.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exe/Promises" beforeDir="false" afterPath="$PROJECT_DIR$/exe/Promises" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Promises.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Promises.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Promises/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Promises/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/Promises_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/promises_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,7 +337,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586548053224</updated>
-      <workItem from="1586548056798" duration="10736000" />
+      <workItem from="1586548056798" duration="10928000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586548200391</created>
@@ -368,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586556761065</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added then method">
+      <created>1586560880524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586560880524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +378,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="fix some gemspec" />
     <MESSAGE value="constructor for promises created and await as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="constructor for promises created and await as well" />
+    <MESSAGE value="added then method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added then method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586554311982">
@@ -390,10 +390,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="416" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1586554507849" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586556760333">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586560879447">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586556760333" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586560879447" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1586554481375">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -422,10 +422,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1586556643899" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586556763832">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586560881886">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586556763832" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586560881886" />
     <state x="92" y="92" width="1182" height="584" key="dock-window-1" timestamp="1586558825795">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
