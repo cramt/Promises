@@ -1,20 +1,46 @@
-require "Promises/version"
+# frozen_string_literal: true
+
+require 'Promises/version'
 
 module Promises
   class Error < StandardError
-    def initialize
-
+    def initialize(message)
+      super
+    end
+  end
+  class RejectedError < Error
+    def initialize(reason)
+      super
     end
   end
 end
 
 class Promise
-  @value
-  @thread
-  @reason
+  def self.resolve(value)
+    new value: value
+  end
 
-  def initialize(&block)
-    @thread = Thread.new {
+  def self.reject(reason)
+    new reason: reason
+  end
+
+  def self.all(promises)
+
+    Promise.new do |resolve, reject|
+      begin
+        results = promises.map(&:await)
+      rescue Promises::RejectedError => e
+        reject.call(e.message)
+      end
+      resolve.call(results)
+    end
+  end
+
+  def initialize(value: nil, reason: nil, &block)
+    @state = :pending
+    return update_state(value, reason) unless block_given?
+
+    @thread = Thread.new do
       wait_thread = Thread.new {sleep}
       block.call(proc {|value|
         @value = value
@@ -24,19 +50,57 @@ class Promise
         wait_thread.terminate
       })
       wait_thread.join
+    end
+  end
+
+  def then(on_fulfilled = nil, on_reject = nil, &block)
+    on_fulfilled ||= block
+    Promise.new {|resolve, reject|
+      begin
+        value = self.await
+        value = on_fulfilled.call(value) || value if on_fulfilled
+        resolve.call(value)
+      rescue Promises::RejectedError => e
+        reason = e.message
+        if on_reject
+          reason = on_reject.call(reason) || reason
+          resolve.call(reason)
+        else
+          reject.call(reason)
+        end
+      end
     }
   end
 
   def pending?
-    true
+    @state == :pending
+  end
+
+  def fulfilled?
+    @state == :fulfilled
+  end
+
+  def rejected?
+    @state == :rejected
   end
 
   def await
-    @thread.join
+    @thread.join if pending?
     if @reason
-      raise @reason
+      raise Promises::RejectedError, @reason
     else
-      return @value
+      @value
     end
+  end
+
+  private
+
+  def update_state(value, reason)
+    raise Promises::Error, 'both reason and value is set' if value && reason
+
+    @value = value
+    @reason = reason
+    @state = :fulfilled if value
+    @state = :rejected if reason
   end
 end
