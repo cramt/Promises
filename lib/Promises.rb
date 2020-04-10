@@ -2,5 +2,11 @@ require "Promises/version"
 
 module Promises
   class Error < StandardError; end
-  # Your code goes here...
+
+end
+
+class Promise
+  def pending?
+    true
+  end
 end

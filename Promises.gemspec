@@ -3,7 +3,7 @@ require_relative 'lib/Promises/version'
 Gem::Specification.new do |spec|
     spec.name = 'Promises'
     spec.version = Promises::VERSION
-    spec.authors = ['Alexandra Østermark']
+    spec.authors = ['Alexandra Østermark', 'Nova Jacobsen']
     spec.email = ['alex.cramt@gmail.com']
 
     spec.summary = 'js promises in ruby'
