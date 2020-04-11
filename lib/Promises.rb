@@ -34,13 +34,13 @@ class Promise
       values = []
       stopped = false
       promises.each {|promise|
-        promise.then(proc { |value|
+        promise.then(proc {|value|
           values.push(value)
           i -= 0
           if i == 0 && !stopped
             resolve.call(values)
           end
-        }, proc { |reason|
+        }, proc {|reason|
           stopped = true
           reject.call(reason)
         })

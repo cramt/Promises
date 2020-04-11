@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="">
+    <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="Promise.all works">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Promises.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Promises.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/promises_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/promises_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Ruby" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager" selected="RSpec.Promise::all">
     <configuration type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
@@ -338,7 +337,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586548053224</updated>
-      <workItem from="1586548056798" duration="12028000" />
+      <workItem from="1586548056798" duration="14406000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586548200391</created>
@@ -375,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586561028639</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Promise.all works">
+      <created>1586564714114</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586564714114</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +394,8 @@
     <MESSAGE value="constructor for promises created and await as well" />
     <MESSAGE value="added then method" />
     <MESSAGE value="adds catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds catch" />
+    <MESSAGE value="Promise.all works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promise.all works" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586554311982">
@@ -399,10 +406,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="416" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1586554507849" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586561027463">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586568595002">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586561027463" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586568595002" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1586554481375">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -427,14 +434,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="522" y="94" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1586554486958" />
-    <state x="184" y="26" key="SettingsEditor" timestamp="1586556643899">
+    <state x="184" y="26" key="SettingsEditor" timestamp="1586568578676">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1586556643899" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586561029281">
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1586568578676" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586564714684">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586561029281" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586564714684" />
     <state x="92" y="92" width="1182" height="584" key="dock-window-1" timestamp="1586558825795">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
