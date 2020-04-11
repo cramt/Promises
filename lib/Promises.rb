@@ -17,11 +17,11 @@ end
 
 class Promise
   def self.resolve(value)
-    new value: value
+    new start_value: value
   end
 
   def self.reject(reason)
-    new reason: reason
+    new start_reason: reason
   end
 
   def self.all(promises)
@@ -53,12 +53,12 @@ class Promise
       finished = false
       promises.each {|promise|
         promise.then(proc {|value|
-          if !finished
+          unless finished
             resolve.call(value)
             finished = true
           end
         }, proc {|reason|
-          if !finished
+          unless finished
             reject.call(reason)
             finished = true
           end
@@ -68,10 +68,10 @@ class Promise
   end
 
   def self.all_settled(promises)
-    Promise.new do |resolve, reject|
-      resolve(promises.map {|promise|
+    Promise.new do |resolve, _|
+      resolve.call(promises.map {|promise|
         begin
-          return {
+           {
             value => promise.await,
             state => "fulfilled"
           }
@@ -85,9 +85,9 @@ class Promise
     end
   end
 
-  def initialize(value: nil, reason: nil, &block)
+  def initialize(start_value: nil, start_reason: nil, &block)
     @state = :pending
-    return update_state(value, reason) unless block_given?
+    return update_state(start_value, start_reason) unless block_given?
 
     @thread = Thread.new do
       wait_thread = Thread.new {sleep}

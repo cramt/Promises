@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="Promise.all works">
+    <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Promises.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Promises.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/promises_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/promises_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +215,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586548053224</updated>
       <workItem from="1586548056798" duration="14406000" />
-      <workItem from="1586604181402" duration="1965000" />
+      <workItem from="1586604181402" duration="2201000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586548200391</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586564714114</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adds Promise::race, Promise::all_settled and Promise%finally">
+      <created>1586606186043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586606186043</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +280,8 @@
     <MESSAGE value="added then method" />
     <MESSAGE value="adds catch" />
     <MESSAGE value="Promise.all works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promise.all works" />
+    <MESSAGE value="adds Promise::race, Promise::all_settled and Promise%finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds Promise::race, Promise::all_settled and Promise%finally" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586554311982">
@@ -289,10 +296,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="363" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1586605821360" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586568615360">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586606185304">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586568615360" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586606185304" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1586554481375">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -353,10 +360,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1586568578676" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586568616814">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586606187286">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586568616814" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586606187286" />
     <state x="92" y="92" width="1182" height="584" key="dock-window-1" timestamp="1586558825795">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
