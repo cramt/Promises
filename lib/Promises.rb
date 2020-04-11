@@ -25,14 +25,26 @@ class Promise
   end
 
   def self.all(promises)
-
     Promise.new do |resolve, reject|
-      begin
-        results = promises.map(&:await)
-      rescue Promises::RejectedError => e
-        reject.call(e.message)
+      i = promises.length
+      if i == 0
+        resolve.call([])
+        return
       end
-      resolve.call(results)
+      values = []
+      stopped = false
+      promises.each {|promise|
+        promise.then(proc { |value|
+          values.push(value)
+          i -= 0
+          if i == 0 && !stopped
+            resolve.call(values)
+          end
+        }, proc { |reason|
+          stopped = true
+          reject.call(reason)
+        })
+      }
     end
   end
 

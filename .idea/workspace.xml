@@ -4,6 +4,7 @@
     <list default="true" id="dbc166ce-110d-4919-bbc7-13c0febfe55a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Promises.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Promises.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/promises_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/promises_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Ruby" />
   </component>
-  <component name="RunManager" selected="RSpec.Promise#then does not call ... (1)">
+  <component name="RunManager" selected="RSpec.Promise::all">
     <configuration type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="Promises" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -68,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Promise" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="Promise::all" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="Promises" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -86,7 +87,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/promises_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Promise" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Promise::all" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -318,11 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.Promise::all" />
         <item itemvalue="RSpec.Promise#then does not call ... (1)" />
         <item itemvalue="RSpec.Promise#then calls second m..." />
         <item itemvalue="RSpec.Promise#then does not call ..." />
         <item itemvalue="RSpec.Promise#then" />
-        <item itemvalue="RSpec.Promise" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +338,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586548053224</updated>
-      <workItem from="1586548056798" duration="10928000" />
+      <workItem from="1586548056798" duration="12028000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586548200391</created>
@@ -367,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586560880524</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adds catch">
+      <created>1586561028639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586561028639</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +387,8 @@
     <MESSAGE value="fix some gemspec" />
     <MESSAGE value="constructor for promises created and await as well" />
     <MESSAGE value="added then method" />
-    <option name="LAST_COMMIT_MESSAGE" value="added then method" />
+    <MESSAGE value="adds catch" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds catch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586554311982">
@@ -390,30 +399,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="416" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1586554507849" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586560879447">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586561027463">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586560879447" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586561027463" />
     <state x="129" y="58" key="DiffContextDialog" timestamp="1586554481375">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="129" y="58" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1586554481375" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1586560792653">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1586564670776">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586560792653" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1586560792653">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586564670776" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1586564670775">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586560792653" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1586560792653">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586564670775" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1586564670775">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586560792653" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1586560792653">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586564670775" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1586564670775">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586560792653" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586564670775" />
     <state x="522" y="94" key="RollbackChangesDialog" timestamp="1586554486958">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -422,10 +431,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1586556643899" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586560881886">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1586561029281">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586560881886" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586561029281" />
     <state x="92" y="92" width="1182" height="584" key="dock-window-1" timestamp="1586558825795">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -453,6 +462,7 @@
     <SUITE FILE_PATH="coverage/Promises@Promise_then_does_not_call______1_.rcov" NAME="Promise#then does not call ... (1) Coverage Results" MODIFIED="1586560792640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Promises" />
     <SUITE FILE_PATH="coverage/Promises@Promises_does_something_useful.rcov" NAME="Promises does something useful Coverage Results" MODIFIED="1586554345125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Promises" />
     <SUITE FILE_PATH="coverage/Promises@spec_helper.rcov" NAME="spec_helper Coverage Results" MODIFIED="1586553992583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" MODULE_NAME="Promises" />
+    <SUITE FILE_PATH="coverage/Promises@Promise__all.rcov" NAME="Promise::all Coverage Results" MODIFIED="1586564670735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Promises" />
     <SUITE FILE_PATH="coverage/Promises@Promise_is_fulfilled_on___r___.rcov" NAME="Promise is fulfilled on ::r... Coverage Results" MODIFIED="1586558107842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Promises" />
     <SUITE FILE_PATH="coverage/Promises@Promise_then_does_not_call____.rcov" NAME="Promise#then does not call ... Coverage Results" MODIFIED="1586560458046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Promises" />
   </component>

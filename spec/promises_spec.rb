@@ -40,7 +40,7 @@ RSpec.describe Promise do
     end
   end
 
-  xdescribe "::all" do
+  describe "::all" do
     it "rejects with a single reject" do
       p1 = Promise.new {sleep}
       p2 = Promise.reject("aaaaaaaaaaaa")
