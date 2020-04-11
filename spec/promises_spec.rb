@@ -49,5 +49,8 @@ RSpec.describe Promise do
         Promise.all([p1, p2, p3]).await
       }.to raise_error "aaaaaaaaaaaa"
     end
+    it "fulfills with an array of values from all resolved" do
+      expect(Promise.all((1..10).to_a.map! {|i| Promise.resolve(i)}).await).to match_array (1..10).to_a
+    end
   end
 end

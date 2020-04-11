@@ -33,10 +33,10 @@ class Promise
       end
       values = []
       stopped = false
-      promises.each {|promise|
+      promises.each_with_index {|promise, index|
         promise.then(proc {|value|
-          values.push(value)
-          i -= 0
+          values[index] = value
+          i -= 1
           if i == 0 && !stopped
             resolve.call(values)
           end
@@ -48,6 +48,43 @@ class Promise
     end
   end
 
+  def self.race(promises)
+    Promise.new do |resolve, reject|
+      finished = false
+      promises.each {|promise|
+        promise.then(proc {|value|
+          if !finished
+            resolve.call(value)
+            finished = true
+          end
+        }, proc {|reason|
+          if !finished
+            reject.call(reason)
+            finished = true
+          end
+        })
+      }
+    end
+  end
+
+  def self.all_settled(promises)
+    Promise.new do |resolve, reject|
+      resolve(promises.map {|promise|
+        begin
+          return {
+            value => promise.await,
+            state => "fulfilled"
+          }
+        rescue Promises::RejectedError => e
+          return {
+            reason => e.message,
+            state => "rejected"
+          }
+        end
+      })
+    end
+  end
+
   def initialize(value: nil, reason: nil, &block)
     @state = :pending
     return update_state(value, reason) unless block_given?
@@ -56,9 +93,11 @@ class Promise
       wait_thread = Thread.new {sleep}
       block.call(proc {|value|
         @value = value
+        @state = :fulfilled
         wait_thread.terminate
       }, proc {|reason|
         @reason = reason
+        @state = :rejected
         wait_thread.terminate
       })
       wait_thread.join
@@ -86,6 +125,13 @@ class Promise
 
   def catch(&block)
     self.then(nil, block)
+  end
+
+  def finally(&block)
+    self.then {|value|
+      block.call
+      value
+    }
   end
 
   def pending?
